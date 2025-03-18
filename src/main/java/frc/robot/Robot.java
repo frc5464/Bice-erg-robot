@@ -82,8 +82,8 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     //driving stuff
-    double rightstickval = driverJoystick.getRawAxis(1);
-    double leftstickval = driverJoystick.getRawAxis(5);
+    double rightstickval = driverJoystick.getRawAxis(5);
+    double leftstickval = driverJoystick.getRawAxis(1);
 
     driveSubsys.drive(leftstickval, rightstickval);
 

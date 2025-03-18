@@ -5,7 +5,7 @@ import com.revrobotics.spark.SparkLowLevel.MotorType;
 
 
 public class MechSubsys {
-    SparkMax mechanism = new SparkMax(0, MotorType.kBrushless);
+    SparkMax mechanism = new SparkMax(34, MotorType.kBrushless);
 
     public void intake(){
         mechanism.set(0.5);

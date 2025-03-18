@@ -5,16 +5,16 @@ import com.revrobotics.spark.SparkLowLevel.MotorType;
 
 
 public class DriveSubsys {
-    SparkMax frontRight = new SparkMax(0, MotorType.kBrushless);
-    SparkMax frontLeft = new SparkMax(0, MotorType.kBrushless);
-    SparkMax backRight = new SparkMax(0, MotorType.kBrushless);
-    SparkMax backLeft = new SparkMax(0, MotorType.kBrushless);
+    SparkMax left5 = new SparkMax(5, MotorType.kBrushless);
+    SparkMax left3 = new SparkMax(3, MotorType.kBrushless);
+    SparkMax right4 = new SparkMax(4, MotorType.kBrushless);
+    SparkMax right2 = new SparkMax(2, MotorType.kBrushless);
 
     public void drive(double leftval, double rightval){
-        frontRight.set(rightval);
-        backRight.set(rightval);
-        frontLeft.set(leftval);
-        backLeft.set(leftval);
+        right4.set(rightval);
+        right2.set(rightval);
+        left3.set(leftval);
+        left5.set(leftval);
     }
 
 }
